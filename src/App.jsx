@@ -60,6 +60,7 @@ console.log(values);
     return (
     <div className="app">
         <form onSubmit={handleSubmit}>
+            <h1>Register</h1>
             {inputs.map(input=>(
                 <FormInput key={input.id} {...input} value={values[input.name]} onChange = {onChange}/>
             ))}
